@@ -37,6 +37,8 @@ implements TastenReagierbar, Ticker, MausKlickReagierbar, MausRadReagierbar, Bil
     
     private Figur hintergrundbild;
     
+    LEVEL1 level;
+    
     
     // =====   K o n s t r u k t o r e n   =========================================================
     
@@ -47,6 +49,8 @@ implements TastenReagierbar, Ticker, MausKlickReagierbar, MausRadReagierbar, Bil
     public SPIEL() 
     {
         this( false );
+       
+        
     }
     
     
@@ -59,6 +63,9 @@ implements TastenReagierbar, Ticker, MausKlickReagierbar, MausRadReagierbar, Bil
     public SPIEL( int fensterBreite , int fensterHoehe )
     {
         this( fensterBreite , fensterHoehe , false );
+         level= new LEVEL1();
+        
+         
     }
     
     
@@ -102,6 +109,7 @@ implements TastenReagierbar, Ticker, MausKlickReagierbar, MausRadReagierbar, Bil
         } catch(Exception e){
             //e.printStackTrace();
         }
+       
     }
     
     

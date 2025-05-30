@@ -1,33 +1,32 @@
 
-/**
- * Beschreiben Sie hier die Klasse LEVEL1.
- * 
- * @author (Ihr Name) 
- * @version (eine Versionsnummer oder ein Datum)
- */
-public class LEVEL1
-{
-    // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
-    private int x;
 
-    /**
-     * Konstruktor für Objekte der Klasse LEVEL1
-     */
+public class LEVEL1 extends LEVEL
+{
+     RECHTECK[] boden;
+    
     public LEVEL1()
     {
-        // Instanzvariable initialisieren
-        x = 0;
+        boden=new RECHTECK[7];
+        
+        boden[0].setzeMittelpunkt(10, -10);
+        boden[1].setzeMittelpunkt(13, -10);
+        boden[2].setzeMittelpunkt(16, -10);
+        boden[3].setzeMittelpunkt(19, -10);
+        boden[4].setzeMittelpunkt(21, -10);
+        boden[5].setzeMittelpunkt(24, -10);
+        boden[6].setzeMittelpunkt(27, -10);
+        
+        boden[0].setzeGroesse(3, 2);
+        boden[1].setzeGroesse(3, 2);
+        boden[2].setzeGroesse(3, 2);
+        boden[3].setzeGroesse(3, 2);
+        boden[4].setzeGroesse(3, 2);
+        boden[5].setzeGroesse(3, 2);
+        boden[6].setzeGroesse(3, 2);
+        
+       
     }
-
-    /**
-     * Ein Beispiel einer Methode - ersetzen Sie diesen Kommentar mit Ihrem eigenen
-     * 
-     * @param  y    ein Beispielparameter für eine Methode
-     * @return        die Summe aus x und y
-     */
-    public int beispielMethode(int y)
-    {
-        // tragen Sie hier den Code ein
-        return x + y;
-    }
+    
+    
+ 
 }
