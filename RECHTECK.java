@@ -55,6 +55,8 @@ extends Rechteck
      */
     private double M_y;
     
+    double deltaX;
+    
     
     /**
      * Konstruktor der Klasse <code>RECHTECK</code>. Erstellt ein neues Standard-Rechteck.
@@ -100,6 +102,23 @@ extends Rechteck
     public void setzeEbene( int ebenenNummer )
     {
         super.getActor().setLayerPosition( ebenenNummer );
+    }
+    
+    void bewegen(){
+        verschiebenUm(deltaX, 0.0);
+    }
+  
+    void bewegeNachLinks(){
+       deltaX=-0.2;
+        
+    }
+    void bewegeNachRechts(){
+        deltaX=0.2;
+    }
+    void anhalten(){
+        deltaX=0;
+        
+        
     }
     
     
