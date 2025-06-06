@@ -63,7 +63,7 @@ implements TastenReagierbar, Ticker, MausKlickReagierbar, MausRadReagierbar, Bil
     public SPIEL( int fensterBreite , int fensterHoehe )
     {
         this( fensterBreite , fensterHoehe , false );
-         level= new LEVEL1();
+        
         
          
     }
