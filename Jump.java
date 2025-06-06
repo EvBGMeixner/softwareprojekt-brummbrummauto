@@ -1,19 +1,28 @@
 
-<<<<<<< HEAD
-=======
+
 public class Jump extends SPIEL
 {
     
     RECHTECK[] boden;
-    
+ 
     //Hallo ich heiße Noah;
+
+    double deltaX;
+    RECHTECK f;
+    
+    
     public Jump()
     {
         super();
+
+        f= new RECHTECK();
+
         
         LEVEL1();
         zeigeKoordinatensystem(true);
-        Figur1(); 
+
+        //Figur1(); 
+
     }
     
     
@@ -42,5 +51,27 @@ public class Jump extends SPIEL
                 
        
     }
+
+    
+    
+     public void tasteReagieren(int Taste){
+        if (Taste==37){
+            f.bewegeNachLinks();
+        }
+        if(Taste==39){
+            f.bewegeNachRechts();
+        }
+
+    }
+    public void tasteLosgelassenReagieren(int Taste){
+        if ( Taste ==37 ||  Taste ==39){
+            f.anhalten();
+
+        }
+
+    }
+    
+    
+
 }
->>>>>>> 5cfad6cfc1806fc353372997586ad865c0b53ef3
+
