@@ -4,7 +4,7 @@ public class Jump extends SPIEL
     
     RECHTECK[] boden;
     
-    
+    //Hallo ich heiße Noah;
     public Jump()
     {
         super();
